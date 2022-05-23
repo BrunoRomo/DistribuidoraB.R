@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contactos</title>
+</head>
+
+<body class="bodycontac">
+    <header>
+        <main>
+        <h1 class="contactosh1">HACE TU PEDIDO</h1><br>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li> <a href="productos.html">PRODUCTOS</a></li>
+                <li> <a href="sucursales.html">SUCURSALES</a></li>
+                <li> <a href="ubicacion.html">UBICACION</a></li>
+                
+            </ul>
+        </nav>
+        </main>
+    </header>
+
+    </main>
+<main class="main-contactos">
+<h3 class="contactosh3">DEJANOS TUS DATOS Y TU PEDIDO PARA REALIZAR EL ENVIO:</h3><br>
+
+    <form action="enviar.php" method="post" enctype="text/plain" class="form-contactos">
+        <label for="nombre"> NOMBRE</label>
+        <input type="text" nombre="nombre" placeholder="escribi tu nombre" required><br>
+        <label for="apellido">APELLIDO</label>
+        <input type="text" nombre="apellido" placeholder="escribi tu apellido" required><br>
+        <label for="mail">MAIL</label>
+        <input type="text" nombre="mail" placeholder="escribi tu mail" required> <br>
+        <label for="telefono">TELEFONO</label>
+        <input type="number" nombre="telefono" placeholder="escribi tu numero" required><br>
+        <label for="">PEDIDO</label><br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="escribi tu pedido" required></textarea><br>
+        <input type="submit">
+        <input type="reset" value="borrar"><br>
+        <br>
+        <label for="ciudad">CIUDAD</label>
+        <select name="ciudad" id="ciudad">
+            <option value="">pergamino</option>
+            <option value="">arrecifes</option>
+            <option value="">rojas</option>
+            <option value="">colon</option>
+            <br><br><br>
+        </select>
+        
+        <div>
+             <h3 class="contactosh3">PODES REALIZAR TU PAGO ATRAVEZ DE:</h3>
+                <ul class="contactos-ul">
+                    <li><a href="">MERCADO PAGO</a></li>
+                    <li><a href="">EFECTIVO AL DELIVEY</a></li>
+                    <li><a href="">TODAS LAS TARJETAS</a></li>
+                </ul>
+        </div>
+
+
+
+    </form><br><br><br>
+</main>
+    <footer class="foo">
+        <main>
+        facebook: Distribuidora de bebidas B.R
+        instagram: DistribuidoraB.R
+        whatsapp: 2477-987654
+        mail:distribuidoraBR@gmail.com
+        Dueño: Bruno Romo
+        Distribuidora de bebidas B.R S.A
+    </main>
+    </footer>
+
+</body>
+
+</html>
