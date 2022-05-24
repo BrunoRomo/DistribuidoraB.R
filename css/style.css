@@ -4,6 +4,7 @@
 }
 body{
     background-color:grey;
+    background: linear-gradient(to left, grey, rgb(41, 39, 39));
 }
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
