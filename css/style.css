@@ -10,7 +10,20 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
     text-align: center;
+    animation-duration: 2s;
+    animation-name: destello;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 
+}
+@keyframes destello{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 nav ul{
@@ -48,6 +61,7 @@ nav ul li a:hover{
     border-radius: 5px;
     border-color: black;
     border-style: ridge;
+
 }
 .p1{
     color: white;
@@ -96,6 +110,7 @@ h4{
     font-size: 1rem;
 
 }
+
 .p8{
     grid-area: p8;
     background-color: rgb(67, 61, 61);
@@ -178,6 +193,7 @@ li a:hover{
 }
 .suc-main{
     background-image: url(../img/google-maps-kXZB--1200x630@abc.jpg);
+    background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(/img/google-maps-kXZB--1200x630@abc.jpg);
     background-size:contain;
 }
 
@@ -199,7 +215,8 @@ li a:hover{
     border-style:dashed;
 }
 .ubicacion-main{
-    background-image: url(../img/vinos-41.webp);
+    background-image:url(../img/vinos-41.webp);
+    background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(/img/vinos-41.webp);
     background-size: cover;
     height: 800px;
     width: 100%;
@@ -222,6 +239,7 @@ iframe{
     display: inline-block;
     margin-left: 120px;
     font-family: Arial, Helvetica, sans-serif;
+    transform: skewX(10deg);
 }
 .ubicacion-p2{
     height: 170px;
@@ -232,6 +250,7 @@ iframe{
     display: inline-block;
     margin-left: 220px;
     font-family: Arial, Helvetica, sans-serif;
+    transform: skewX(10deg);
 
 }
 .ubicacion-p3{
@@ -243,7 +262,7 @@ iframe{
     display: inline-block;
     margin-left: 250px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    transform: skewX(10deg);
 
 }
 
