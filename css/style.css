@@ -50,20 +50,20 @@ nav ul li a:hover{
     border-style: ridge;
 }
 .p1{
-    color: aqua;
+    color: white;
 }
 .p2{
 
-    color: firebrick;
+    color: rgb(167, 158, 158);
 
 }
 .p3{ 
     
-    color: blue;
+    color: rgb(39, 35, 35);
 }
 #p4{
     
-    color: lime;
+    color: rgb(41, 39, 39);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .p5{ 
