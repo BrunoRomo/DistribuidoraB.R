@@ -2,13 +2,17 @@
     margin: 0%;
     padding: 0%;
 }
+/*aca empieza el index.html */
+
+
 body{
     background-color:grey;
     background: linear-gradient(to left, grey, rgb(41, 39, 39));
 }
+
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
+    font-size: 200%;
     text-align: center;
     animation-duration: 2s;
     animation-name: destello;
@@ -26,36 +30,17 @@ h1{
     }
 }
 
-nav ul{
-    
-    display: flex;
-    justify-content: space-evenly;
-    text-decoration: none;
-    justify-items: center;
-    margin: 1rem;
-    padding: 1rem;
-}
-nav ul li{
-    padding: 0.5rem;
-    list-style-type: none;
-}
-nav ul li a{
-    color: antiquewhite;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-nav ul li a:hover{
-    color: black;
-}
 .imgHome{
     display: none;
     grid-area: imgHome;
+    margin-top: 10px;
+
 }
+
 .parrafos{
-    margin: 1rem;
-    margin-top: 3rem;
-    padding: 10px;
+    margin: 10%;
+    margin-top: 5%;
+    padding: 10%;
     grid-area: parrafos;
     background-color: darkslategrey;
     border-radius: 5px;
@@ -63,27 +48,33 @@ nav ul li a:hover{
     border-style: ridge;
 
 }
+
 .p1{
     color: white;
 }
+
 .p2{
 
     color: rgb(167, 158, 158);
 
 }
+
 .p3{ 
     
     color: rgb(39, 35, 35);
 }
+
 #p4{
     
     color: rgb(41, 39, 39);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .p5{ 
     
     color: blanchedalmond;
 }
+
 .p6{
     
     color: rgba(0, 0, 0, 0.799);
@@ -91,9 +82,9 @@ nav ul li a:hover{
 
 h4{
     grid-area: h4;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
 
 
 }
@@ -106,8 +97,8 @@ h4{
     border-width: 15px;
     border-style: ridge;
     border-color: rgb(28, 30, 30);
-    margin: 1rem;
-    font-size: 1rem;
+    margin: 5%;
+    font-size: 100%;
 
 }
 
@@ -120,58 +111,56 @@ h4{
     border-style: ridge;
     border-color: rgb(28, 30, 30);
     margin: 1rem;
-    font-size: 1rem;
+    font-size: 100%;
 }
-
-footer{
-    height: 50px;
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:15px;
-    background-color: rgba(30, 29, 29, 0.766);
-    color: aliceblue;
-    border-color: azure;
-    border-style:inherit;
-    
-
-    
+/*footer*/
+.contactmain{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
+.contactmain main{
+    margin-top: 10%;
+}
+ /*aca finaliza el index.html*/
+
+ /*aca empieza contactos.html*/
+
 .contactosh1{
-    color: brown;
+    color: rgb(14, 13, 13);
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.contactosh3{
-    color: saddlebrown;
-
 
 }
 .bodycontac{
     background-color: grey;
-    color: brown;
+    color: rgb(14, 13, 13);
    
 
 }
 .main-contactos{
-    background-image: url(/img/images7.jpg);
+    background-image: url(/img/images\(10\).jpg);
     background-size: cover;
 }
 
 
 .foo{
     display: flex;
-    align-items:center
+    align-items:center;
+    color: black;
+
 
 }
-.contactosh3{
+.contactosh2{
     margin: 20px;
     padding: 10px;
-    color: darkred;
-    text-align: justify;
+    color: rgb(10, 9, 9);
+    text-align: center;
     text-decoration: solid;
+    color: rgb(12, 11, 11);
 }
 .form-contactos{
-    color: rgba(225, 222, 233, 0.536);
+    color: rgba(8, 8, 8, 0.536);
     margin: 10px;
     padding: 10px;
 }
@@ -182,11 +171,9 @@ footer{
 li a:hover{
     color: black;
 }
+/*aca finaliza contactos*/
 
-.suc-head{
-    height: 25px;
-    width: 70%;
-}
+/*aca empieza sucursales*/
 .ma{
     height: 25px;
     
@@ -195,77 +182,85 @@ li a:hover{
     background-image: url(../img/google-maps-kXZB--1200x630@abc.jpg);
     background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(/img/google-maps-kXZB--1200x630@abc.jpg);
     background-size:contain;
+    background-position: center;
+    height: 80%;
 }
 
 .main-h2{
-    height: 100px;
-    width: 70%;
-    margin: 150px;
-    text-align: center;
-    margin-top: 120px;
-}
-.tabla{
-    margin-left: 300px;
-
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: rgb(54, 55, 56);
+   text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
 }
 .suc-di{
-    margin: 150px;
     width: 80%;
     border: 5px black;
     border-style:dashed;
+
 }
+/*aca finaliza sucursales*/
+
+/*aca empieza ubicacion.html*/
 .ubicacion-main{
     background-image:url(../img/vinos-41.webp);
     background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(/img/vinos-41.webp);
     background-size: cover;
-    height: 800px;
+    height: 800%;
     width: 100%;
+    margin-bottom: 20%;
 }
 iframe{
-    margin: 50px;
-    margin-left: 450px;
+    margin: 15%;
+  
 }
 .ubicicion-div{
-    height: 500px;
-    width: 100%
+    height: 150%;
+    width: 100%;
+
+ 
 
 }
 .ubicacion-p1{
-    height: 170px;
-    width: 200px;
+    height: 100%;
+    width: 80%;
     color: rgb(18, 19, 19);
     border-color: black;
     border-style: ridge;
     display: inline-block;
-    margin-left: 120px;
+    margin-left: 5%;
     font-family: Arial, Helvetica, sans-serif;
-    transform: skewX(10deg);
+    font-size: 80%;
 }
 .ubicacion-p2{
-    height: 170px;
-    width: 200px;
+    height: 100%;
+    width: 80%;
     color: aliceblue;
     border-color: black;
     border-style: ridge;
     display: inline-block;
-    margin-left: 220px;
+    margin-left: 5%;
     font-family: Arial, Helvetica, sans-serif;
-    transform: skewX(10deg);
+   
+    font-size: 80%;
 
 }
 .ubicacion-p3{
-    height: 170px;
-    width: 200px;
+    height: 100%;
+    width: 80%;
     color: aliceblue;
     border-color: black;
     border-style: ridge;
     display: inline-block;
-    margin-left: 250px;
+    margin-left: 5%;
     font-family: Arial, Helvetica, sans-serif;
-    transform: skewX(10deg);
+    font-size: 80%;
 
 }
+/*aca finaliza ubicacion*/
 
+/* mediaqueris del index.html*/
 
 .mainHome{
   display: grid;
@@ -312,6 +307,9 @@ iframe{
 }
 
 }
+/*aca finaliza mediaqueris de index.html*/
+
+/*aca empieza productos.html y su mediaqueris*/
 
 .imagen1{
     grid-area: imagen1;

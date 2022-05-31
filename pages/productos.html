@@ -5,23 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Productos</title>
 </head>
 
 <body>
-    <header>
-        <h1>NUESTROS PRODUCTOS</h1>
+    <header>    
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="../index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="contactos.html">CONTACTOS <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sucursales.html">SUCURSALES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ubicacion.html">UBICACION</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">PRODUCTOS</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <h1>NUESTROS PRODUCTOS</h1>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li> <a href="sucursales.html">SUCURSALES</a></li>
-            <li> <a href="ubicacion.html">UBICACION</a></li>
-            <li> <a href="contactos.html">CONTACTOS</a></li>
-        </ul>
-    </nav>
 
 
     <main class="main-productos">
@@ -29,7 +43,7 @@
         <img class="imagen2" src="../img/images (2).jpg" alt="" height="250" width="250">
         <img class="imagen3" src="../img/images (3).jpg" alt="" height="250" width="250">
         <img class="imagen4" src="../img/images (6).jpg" alt="" height="250" width="250">
-        <img class="imagen5" src="../img/612f92a324f92_900.jpg" alt="" height="250" width="250">
+        <img class="imagen5" src="../img/images (5).jpg" alt="" height="250" width="250">
         <p class="pProductos">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quos. Minima exercitationem, dignissimos voluptatem magnam blanditiis incidunt quam animi asperiores? Praesentium consectetur consequuntur dicta ducimus aspernatur quisquam repellat sequi adipisci?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error soluta illum assumenda eligendi? Error obcaecati corrupti molestias similique reiciendis neque voluptatem ullam veritatis ducimus iusto? Quae sequi iusto id a.
@@ -41,7 +55,7 @@
 
 
 
-    <footer>
+    <footer class="contactmain container-fluid">
         <main>
             facebook: Distribuidora de bebidas B.R
             instagram: DistribuidoraB.R
@@ -52,6 +66,10 @@
         </main>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

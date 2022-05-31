@@ -5,68 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contactos</title>
 </head>
 
 <body class="bodycontac">
-    <header>
-        <main>
-        <h1 class="contactosh1">HACE TU PEDIDO</h1><br>
-        
-        <nav>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li> <a href="productos.html">PRODUCTOS</a></li>
-                <li> <a href="sucursales.html">SUCURSALES</a></li>
-                <li> <a href="ubicacion.html">UBICACION</a></li>
-                
-            </ul>
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="../index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="productos.html">PRODUCTOS <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sucursales.html">SUCURSALES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ubicacion.html">UBICACION</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">CONTACTOS</a>
+                </li>
+              </ul>
+            </div>
         </nav>
-        </main>
-    </header>
+          
+    </header>     
+    <main class="main-contactos container-fluid">
+        <h1 class="contactosh1">HACE TU PEDIDO</h1>
+        <h2 class="contactosh2 col-xl-12">DEJANOS TUS DATOS Y TU PEDIDO PARA REALIZAR EL ENVIO:</h2>
 
-    </main>
-<main class="main-contactos">
-<h3 class="contactosh3">DEJANOS TUS DATOS Y TU PEDIDO PARA REALIZAR EL ENVIO:</h3><br>
-
-    <form action="enviar.php" method="post" enctype="text/plain" class="form-contactos">
-        <label for="nombre"> NOMBRE</label>
-        <input type="text" nombre="nombre" placeholder="escribi tu nombre" required><br>
-        <label for="apellido">APELLIDO</label>
-        <input type="text" nombre="apellido" placeholder="escribi tu apellido" required><br>
-        <label for="mail">MAIL</label>
-        <input type="text" nombre="mail" placeholder="escribi tu mail" required> <br>
-        <label for="telefono">TELEFONO</label>
-        <input type="number" nombre="telefono" placeholder="escribi tu numero" required><br>
-        <label for="">PEDIDO</label><br>
-        <textarea name="" id="" cols="30" rows="10" placeholder="escribi tu pedido" required></textarea><br>
-        <input type="submit">
-        <input type="reset" value="borrar"><br>
-        <br>
-        <label for="ciudad">CIUDAD</label>
-        <select name="ciudad" id="ciudad">
-            <option value="">pergamino</option>
-            <option value="">arrecifes</option>
-            <option value="">rojas</option>
-            <option value="">colon</option>
-            <br><br><br>
-        </select>
-        
-        <div>
-             <h3 class="contactosh3">PODES REALIZAR TU PAGO ATRAVEZ DE:</h3>
-                <ul class="contactos-ul">
-                    <li><a href="">MERCADO PAGO</a></li>
-                    <li><a href="">EFECTIVO AL DELIVEY</a></li>
-                    <li><a href="">TODAS LAS TARJETAS</a></li>
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputNombre">Nombre</label>
+                <input type="text" class="form-control" id="inputNombre">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputApellido">Apellido</label>
+                <input type="text" class="form-control" id="inputApellido">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputDireccion">Direccion</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Escribi tu direccion">
+            </div>
+            <div class="form-group">
+              <label for="inputTelefono">Telefono</label>
+              <input type="text" class="form-control" id="inputTelefono" placeholder="Escribi tu telefono">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCiudad">Ciudad</label>
+                <input type="text" class="form-control" id="inputCiudad">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputProvincia">Provincia</label>
+                <select id="inputProvincia" class="form-control">
+                  <option selected>Bs.As</option>
+                  <option>Santa Fe</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputNumero">Codigo postal</label>
+                <input type="text" class="form-control" id="inputNumero">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Escribe tu pedido</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Estoy de acuerdo en dejar mis datos
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">ENVIAR</button>
+        </form>
+        <div class="row">
+                <h3 class="contactosh3 col-xl-12">PODES REALIZAR TU PAGO ATRAVEZ DE:</h3>
+                <ul class="contactos-ul col-xl-12">
+                   <li><a href="">MERCADO PAGO</a></li>
+                   <li><a href="">EFECTIVO AL DELIVEY</a></li>
+                   <li><a href="">TODAS LAS TARJETAS</a></li>
                 </ul>
         </div>
+    
+    </main>
 
-
-
-    </form><br><br><br>
-</main>
-    <footer class="foo">
+    <footer class="contactmain container-fluid">
         <main>
         facebook: Distribuidora de bebidas B.R
         instagram: DistribuidoraB.R
@@ -74,9 +108,13 @@
         mail:distribuidoraBR@gmail.com
         Dueño: Bruno Romo
         Distribuidora de bebidas B.R S.A
-    </main>
+        </main>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
