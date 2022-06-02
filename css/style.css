@@ -141,7 +141,7 @@ h4{
 .main-contactos{
     background-image: url(../img/imagees.jpg);
     background-size: cover;
-   /* background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(/img/imagees.jpg);*/
+   background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(../img/imagees.jpg);
     background-position: center;
 
 }
@@ -170,7 +170,7 @@ li a:hover{
 /*aca empieza sucursales*/
 .suc-main{
     background-image: url(../img/google-maps-kXZB--1200x630@abc.jpg);
-    /*background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(/img/google-maps-kXZB--1200x630@abc.jpg);*/
+    background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(../img/google-maps-kXZB--1200x630@abc.jpg);
     background-size:contain;
     background-position: center;
     height: 80%;
@@ -195,7 +195,7 @@ li a:hover{
 /*aca empieza ubicacion.html*/
 .ubicacion-main{
     background-image:url(../img/vinos-41.webp);
-    /*background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(/img/vinos-41.webp);*/
+    background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(../img/vinos-41.webp);
     background-size: cover;
     height: 800%;
     width: 100%;
