@@ -1,0 +1,365 @@
+/*variables*/
+
+/*colores*/
+$color1:grey;
+$color2:darkslategrey;
+$color3:white;
+$color4:black;
+$color5:blanchedalmond;
+$color6:rgb(167, 158, 158);
+
+/*medidas*/
+$xsmall:5%;
+$small:10%;
+$medium:80%;
+$large:100%;
+$xlarge:200%;
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/*aca empieza el index.html */
+
+
+body{
+    background-color:$color1;
+    background: linear-gradient(to left, $color1, rgb(41, 39, 39));
+
+
+    h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $xlarge;
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: destello;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    }
+    @keyframes destello{
+        0%{
+        opacity: 0;
+        }
+        100%{
+        opacity: 1;
+        }
+    }
+
+    .imgHome{
+        /*display:none;*/
+        grid-area: imgHome;
+        margin-top: 10px;
+        }
+
+    .parrafos{
+    margin: $small;
+    margin-top: $xsmall;
+    padding: $small;
+    grid-area: parrafos;
+    background-color: $color2;
+    border-radius: 5px;
+    border-color: $color4;
+    border-style: ridge;
+
+    
+
+        .p1{
+            color:$color3;
+        }
+
+        .p2{
+            color: $color6;
+        }
+
+        .p3{ 
+            color: $color3;
+        }
+
+        #p4{
+            color: $color4;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .p5{ 
+        color: $color5;
+        }
+
+        .p6{
+            color: $color4;
+        }
+    }
+
+    h4{
+        grid-area: h4;
+        font-size: 40px;
+        text-align: center;
+        padding-top: $xsmall;
+        }
+
+    .p7{
+        grid-area: p7;
+        background-color: rgb(67, 61, 61);
+        padding: 10px;
+        border: 12px solid yellow; 
+        border-width: 15px;
+        border-style: ridge;
+        border-color: rgb(28, 30, 30);
+        margin: $xsmall;
+        font-size:$large;
+        }
+
+    .p8{
+        grid-area: p8;
+        background-color: rgb(67, 61, 61);
+        padding: 10px;
+        border: 12px solid yellow; 
+        border-width: 15px;
+        border-style: ridge;
+        border-color: rgb(28, 30, 30);
+        margin: 1rem;
+        font-size:$large;
+        }
+/*footer*/
+        .contactmain{
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            }
+        .contactmain main{
+            margin-top: $small;
+            }
+}
+    /*aca finaliza el index.html*/
+
+    /*aca empieza contactos.html*/
+
+.main-contactos{
+    background-image: url(../img/imagees.jpg);
+    background-size: cover;
+    background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(../img/imagees.jpg);
+    background-position: center;
+
+
+    .contactosh1{
+        color: rgb(14, 13, 13);
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+    .contactosh2{
+        margin: 20px;
+        padding: 10px;
+        color: rgb(10, 9, 9);
+        text-align: center;
+        text-decoration: solid;
+        color: rgb(12, 11, 11);
+        }
+
+    .contactos-ul li a{
+        color: blue;
+        text-decoration: underline;
+    }
+    li a:hover{
+        color: black;
+    }
+}
+/*aca finaliza contactos*/
+
+/*aca empieza sucursales*/
+.suc-main{
+    background-image: url(../img/google-maps-kXZB--1200x630@abc.jpg);
+    background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(../img/google-maps-kXZB--1200x630@abc.jpg);
+    background-size:contain;
+    background-position: center;
+    height:$medium;
+
+
+    .main-h2{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        color: rgb(54, 55, 56);
+        text-align:center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    .suc-di{
+        width: 80%;
+        border: 5px black;
+        border-style:dashed;
+        }
+
+}
+/*aca finaliza sucursales*/
+
+/*aca empieza ubicacion.html*/
+.ubicacion-main{
+    background-image:url(../img/vinos-41.webp);
+    background-image: radial-gradient(rgba(0,0,0,0.4), rgba(252,255,255,0.5)), url(../img/vinos-41.webp);
+    background-size: cover;
+    height: 800%;
+    width: 100%;
+    margin-bottom: 20%;
+}
+iframe{
+    margin: 15%;
+
+}
+.ubicicion-div{
+    height: 150%;
+    width: 100%;
+
+
+
+
+    .ubicacion-p1{
+        height: 100%;
+        width: 80%;
+        color: rgb(18, 19, 19);
+        border-color: black;
+        border-style: ridge;
+        display: inline-block;
+        margin-left: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 80%;
+    }
+
+.ubicacion-p2{
+    height: 100%;
+    width: 80%;
+    color: aliceblue;
+    border-color: black;
+    border-style: ridge;
+    display: inline-block;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    }
+
+.ubicacion-p3{
+    height: 100%;
+    width: 80%;
+    color: aliceblue;
+    border-color: black;
+    border-style: ridge;
+    display: inline-block;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    }
+}
+/*aca finaliza ubicacion*/
+
+/* mediaqueris del index.html*/
+
+.mainHome{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:"imgHome imgHome"
+                    "parrafos parrafos"
+                    "h4 h4"
+                    "p7 p7"
+                    "p8 p8";
+
+}
+@media screen and (min-width:600px) {
+    .mainHome{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        grid-template-areas:"imgHome imgHome"
+                            "parrafos parrafos"
+                            "h4 h4"
+                            "p7 p7"
+                            "p8 p8";
+        
+    }
+    .imgHome{
+            display: block;
+    }
+
+
+}
+@media screen and (min-width:1024px) {
+    .mainHome{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        grid-template-areas:"imgHome imgHome imgHome imgHome"
+                            "h4 h4 parrafos parrafos"
+                            "p7 p7 parrafos parrafos"
+                            "p8 p8 parrafos parrafos";
+
+}
+
+}
+/*aca finaliza mediaqueris de index.html*/
+
+/*aca empieza productos.html y su mediaqueris*/
+
+.imagen1{
+    grid-area: imagen1;
+}
+.imagen2{
+    grid-area: imagen2;
+}
+.imagen3{
+    grid-area: imagen3;
+}
+.imagen4{
+    grid-area: imagen4;
+}
+
+.imagen5{
+    grid-area: imagen5;
+}
+.pProductos{
+    grid-area: pProductos;
+    display: none;
+}
+
+.main-productos{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:"imagen1 imagen1"
+                        "imagen2 imagen2"
+                        "imagen3 imagen3"
+                        "imagen4 imagen4"
+                        "imagen5 imagen5"
+                        ;
+}
+@media screen and (min-width:600px) {
+
+    .main-productos{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:"imagen1 imagen2"
+                            "imagen3 imagen4"
+                            "imagen5 imagen5"
+                            ;
+    }
+}
+@media screen and (min-width:1024px){
+.main-productos{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:"pProductos pProductos imagen1 imagen2"
+                        "pProductos pProductos  imagen3 imagen4"
+                        "pProductos pProductos  imagen5 imagen5"
+                    
+                        ;
+}
+.pProductos{
+    font-size: 1.5rem;
+    display: block;
+    margin: 1rem;
+}
+}
