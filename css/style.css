@@ -22,7 +22,6 @@ body h1 {
   animation-delay: 2s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-
 }
 @keyframes destello {
   0% {
@@ -36,7 +35,6 @@ body .imgHome {
   /*display:none;*/
   grid-area: imgHome;
   margin-top: 10px;
-
 }
 body .parrafos {
   margin: 10%;
@@ -47,14 +45,12 @@ body .parrafos {
   border-radius: 5px;
   border-color: black;
   border-style: ridge;
-
 }
 body .parrafos .p1 {
   color: white;
 }
 body .parrafos .p2 {
   color: rgb(167, 158, 158);
-
 }
 body .parrafos .p3 {
   color: white;
@@ -74,8 +70,6 @@ body h4 {
   font-size: 40px;
   text-align: center;
   padding-top: 5%;
-
-
 }
 body .p7, body .p8 {
   grid-area: p7;
@@ -87,11 +81,9 @@ body .p7, body .p8 {
   border-color: rgb(28, 30, 30);
   margin: 5%;
   font-size: 100%;
-
 }
 body .p8 {
   grid-area: p8;
-
 }
 body .contactmain {
   color: black;
@@ -103,7 +95,6 @@ body .contactmain main {
 }
 
 /*aca finaliza el index.html*/
-
 /*aca empieza contactos.html*/
 .main-contactos {
   background-image: url(../img/imagees.jpg);
@@ -134,7 +125,6 @@ body .contactmain main {
 }
 
 /*aca finaliza contactos*/
-
 /*aca empieza sucursales*/
 .suc-main {
   background-image: url(../img/google-maps-kXZB--1200x630@abc.jpg);
@@ -149,15 +139,14 @@ body .contactmain main {
   color: rgb(54, 55, 56);
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 .suc-main .suc-di {
   width: 80%;
   border: 5px black;
   border-style: dashed;
 }
-/*aca finaliza sucursales*/
 
+/*aca finaliza sucursales*/
 /*aca empieza ubicacion.html*/
 .ubicacion-main {
   background-image: url(../img/vinos-41.webp);
@@ -170,7 +159,6 @@ body .contactmain main {
 
 iframe {
   margin: 15%;
-
 }
 
 /*mi mixin*/
@@ -184,6 +172,7 @@ iframe {
   margin-left: 5%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 80%;
+  text-align: center;
 }
 
 .ubicacion-p2 {
@@ -195,9 +184,8 @@ iframe {
   display: inline-block;
   margin-left: 5%;
   font-family: Arial, Helvetica, sans-serif;
-
   font-size: 80%;
-
+  text-align: center;
 }
 
 .ubicacion-p3 {
@@ -210,11 +198,10 @@ iframe {
   margin-left: 5%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 80%;
-
+  text-align: center;
 }
 
 /*aca finaliza ubicacion*/
-
 /* mediaqueris del index.html*/
 .mainHome {
   display: grid;
@@ -235,8 +222,6 @@ iframe {
   .imgHome {
     display: block;
   }
-
-
 }
 @media screen and (min-width: 1024px) {
   .mainHome {
@@ -246,10 +231,8 @@ iframe {
     justify-items: center;
     grid-template-areas: "imgHome imgHome imgHome imgHome" "h4 h4 parrafos parrafos" "p7 p7 parrafos parrafos" "p8 p8 parrafos parrafos";
   }
-
 }
 /*aca finaliza mediaqueris de index.html*/
-
 /*aca empieza productos.html y su mediaqueris*/
 .imagen1 {
   grid-area: imagen1;
